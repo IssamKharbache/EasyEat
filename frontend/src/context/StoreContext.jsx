@@ -4,7 +4,7 @@ import axios from "axios";
 const StoreContextProvider = (props) => {
   //handling cart
   const [cartItems, setCartItems] = useState({});
-  const baseUrl = "http://localhost:4000";
+  const baseUrl = "https://easyeat.onrender.com";
   const [token, setToken] = useState("");
   const [foodList, setFoodList] = useState([]);
   const addToCart = async (itemId) => {
