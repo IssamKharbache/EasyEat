@@ -8,11 +8,10 @@ import { useNavigate } from "react-router-dom";
 import { MdDelete } from "react-icons/md";
 import { AiFillEdit } from "react-icons/ai";
 import LoadingSpinner from "../../components/spinner/LoadingSpinner";
-const List = () => {
+const List = ({ baseUrl }) => {
   //
   const navigate = useNavigate();
   //
-  const baseUrl = "http://localhost:4000";
   const [productList, setProductList] = useState([]);
 
   //loading handling state
