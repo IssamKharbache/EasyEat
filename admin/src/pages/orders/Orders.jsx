@@ -21,7 +21,6 @@ const Orders = ({ baseUrl }) => {
       toast.error("Something went wrong", { position: "top-center" });
     }
   };
-  console.log(data);
   useEffect(() => {
     fetchData();
   }, []);
