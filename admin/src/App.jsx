@@ -9,7 +9,7 @@ import Dashboard from "./pages/dashboard/Dashboard";
 
 const App = () => {
   //base url
-  const url = "http://localhost:4000";
+  const url = "https://easyeat.onrender.com";
   return (
     <div>
       <Toaster richColors />
