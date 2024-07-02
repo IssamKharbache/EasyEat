@@ -10,7 +10,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 //placing order function
 
 const placeOrder = async (req, res) => {
-  const frontEndUrl = "https://easy-eat-theta.vercel.app/";
+  const frontEndUrl = "https://easy-eat-platform.vercel.app/";
   try {
     const newOrder = new orderModel({
       userId: req.body.userId,
