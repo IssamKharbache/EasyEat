@@ -5,6 +5,7 @@ import axios from "axios";
 import { IoCloseCircleOutline } from "react-icons/io5";
 import { StoreContext } from "../../context/StoreContext";
 import { toast } from "sonner";
+import LoadingSpinner from "../loadingspinner/LoadingSpinner";
 
 const LoginModal = ({ setShowLogin }) => {
   const [currentAuthOption, setCurrentAuthOption] = useState("login");
@@ -107,6 +108,7 @@ const LoginModal = ({ setShowLogin }) => {
             {currentAuthOption === "signup"
               ? "creating an account please wait..."
               : "Logging you in please wait..."}
+            <LoadingSpinner size={20} />
           </button>
         ) : (
           <button type="submit">

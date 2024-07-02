@@ -5,7 +5,8 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 import { toast } from "sonner";
-import LoadingSpinner from "../../../../admin/src/components/spinner/LoadingSpinner";
+import LoadingSpinner from "../../components/loadingspinner/LoadingSpinner";
+
 const PlaceOrderPage = () => {
   const navigate = useNavigate();
   const { getTotalCartAmount, cartItems, token, foodList, baseUrl } =
