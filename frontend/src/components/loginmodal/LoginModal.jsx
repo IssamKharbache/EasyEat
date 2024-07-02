@@ -4,8 +4,8 @@ import axios from "axios";
 //icons
 import { IoCloseCircleOutline } from "react-icons/io5";
 import { StoreContext } from "../../context/StoreContext";
-import LoadingSpinner from "../../../../admin/src/components/spinner/LoadingSpinner";
 import { toast } from "sonner";
+import LoadingSpinner from "../loadingspinner/LoadingSpinner";
 
 const LoginModal = ({ setShowLogin }) => {
   const [currentAuthOption, setCurrentAuthOption] = useState("login");
