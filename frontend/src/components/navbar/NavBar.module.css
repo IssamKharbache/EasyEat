@@ -1,0 +1,201 @@
+.navbar{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 150px;
+}
+.navbarMenu{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: #49557e;
+    font-size: 18px;
+}
+
+.navbarRight{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.button{
+    background: transparent;
+    font-size: 16px;
+    color: #49557e;
+    border: 1px solid #B86767;
+    border-radius: 20px;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.button:hover{
+    background-color: #B86767;
+    color: white;
+}
+
+.active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #B86767;
+    color:#B86767 ;
+}
+
+.navbar li {
+    cursor: pointer;
+}
+.navbar li:hover {
+    color: #B86767;
+    transition: 0.4s;
+}
+.navbarSearchIcon{
+    position: relative;
+}
+.navbarSearchIcon .dot{
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: #B86767;
+    border-radius: 5px;
+    top: -8px;
+    right: -8px;
+     
+}
+.icons{
+    font-size: 25px;
+}
+
+
+.respMenu .menuList{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    z-index: 1;
+    gap: 35px;
+    background-color: #B86767;
+    color: white;
+    padding: 25px;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: ease-in-out 1s;
+    animation: fadeIn 1s ; 
+    
+}
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+        right: -100%;
+    }
+    100%{
+        opacity: 1;
+        right: 0%;
+    }
+    
+}
+.burgerIcon{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+@media (max-width:1150px){
+    .navbar .logo{
+        width: 100px;
+    }
+    .navbarMenu{
+        gap: 14px;
+        font-size: 15px;
+        
+    }
+    .navBarRight{
+        gap: 30px;
+    }
+    .navBarRight .button{
+        padding: 8px 25px;
+    }
+}
+
+@media (max-width:950px){
+    .navbar .logo{
+        width: 120px;
+    }
+    .navbarMenu{
+        display: none;
+          
+      }
+    .navbarMenu{
+        gap: 15px;
+        font-size: 16px;
+        
+    }
+    .burgerIcon{
+        font-size: 18px;
+    }
+    .navbarRight{
+        gap: 20px;
+    }
+    .navbarRight .button{
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+  
+     
+}
+
+.navbarProfile{
+    position: relative;
+    font-size: 20px;
+    cursor: pointer;
+}
+.navProfileDropDown{
+    position: absolute;
+    margin-left: -100%;
+    display: none;
+    right: 0;
+    z-index: 1;
+    transition-duration: 0.5s;
+    width: 200px;
+    
+}
+.navbarProfile:hover .navProfileDropDown{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #000000;
+    padding: 12px 25px;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    list-style: none;
+    padding: 35px;
+}
+.navProfileDropDown li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer ;
+}
+.navProfileDropDown li:hover{
+    color: rgb(204, 190, 190);
+}
+.navProfileDropDown hr{
+    border: 0.5px solid #635959;
+    border-radius: 15px;
+}
+.navProfileDropDown .icon{
+    font-size: 15px;
+}
+@media (max-width:750px){
+    .navbar .logo{
+        width: 80px;
+    }
+    .icons{
+        font-size: 20px;
+    }
+   
+   
+}

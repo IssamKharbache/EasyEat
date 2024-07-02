@@ -1,0 +1,139 @@
+.flexCol{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.add {
+    width: 70%;
+    margin-top: 10px;
+    color: #292626;
+    font-size: 18px;
+    margin-left: 45px;
+    font-weight: 500;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 45px;
+    
+    
+}
+.list h2{
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 25px;
+}
+.listTableFormat{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 0.5fr;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    border: 1px solid #dbdbdb;
+    font-size:14px;
+
+
+}
+
+.listTableFormat img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius:100%;
+}
+.listTableFormat.title{
+    background-color: #ebe5e5;
+}
+.listTableFormat .name{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.cursor{
+    font-size: 15px;
+    cursor: pointer;
+    color: rgb(148, 74, 74);
+}
+.actions{
+    display: flex ;
+    align-items: center;
+    gap: 15px;
+    font-size: 15px;
+}
+.edit{
+    cursor: pointer;
+    color: #424141;
+}
+.noItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: 35px;
+}
+.noItem button{
+    background-color: black;
+    border: none;
+    color: white;
+     padding: 12px;
+     font-weight: 400;
+     font-size: 13px;
+     cursor: pointer;
+     border-radius: 25px;
+    transition-duration: 0.3s;
+    opacity: 90%;
+    margin-bottom: 35px;
+}
+.noItem button:hover{
+    opacity: 100%;
+    border-radius: 0px;
+   
+}
+.titleHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.titleHeader button{
+    background-color: black;
+    border: none;
+    color: white;
+     padding: 12px;
+     font-weight: 400;
+     font-size: 13px;
+     cursor: pointer;
+     border-radius: 25px;
+    transition-duration: 0.3s;
+    opacity: 90%;
+    margin-bottom: 35px;
+
+}
+.titleHeader button:hover{
+    border-radius: 0px;
+}
+@media (max-width:600px) {
+    .listTableFormat {
+        grid-template-columns: 1fr 3fr 1fr;
+        gap: 15px;
+    }
+    .listTableFormat.title{
+        display: none;
+    }
+    .add{
+        width: 100%;
+        margin-left: 10px;
+    }
+    .listTableFormat img {
+        width: 40px;
+        height: 40px;
+     
+    }
+    .titleHeader button{
+         padding: 5px;
+         margin-bottom: 18px;
+    }
+    .titleHeader h2{
+        font-size: 15px;
+    }
+    
+    
+}

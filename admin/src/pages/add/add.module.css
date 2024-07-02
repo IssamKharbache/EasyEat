@@ -1,0 +1,142 @@
+.add {
+    width: 50%;
+    margin-top: 10px;
+    color: #292626;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: rgb(226 232 240);
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 45px;
+    justify-content:center ;
+    align-items: center;
+    margin: auto;
+}
+.add h1{
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+}
+.add form {
+    gap: 20px;
+}
+.addImgUpload img{
+width: 120px;
+cursor: pointer;
+}
+
+.flexCol{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.addItemName , .addItemDescription{
+    width: 100%
+
+}
+.addItemName input, .addItemDescription textarea{
+    padding: 14px;
+    border-radius: 5px;
+    border: 1px solid rgb(161, 160, 158);
+    outline: none;
+    font-weight: 400;
+}
+.addItemName input:focus, .addItemDescription textarea:focus{
+    border: 2px solid salmon;
+}
+
+.addCategoryPrice{
+    display: flex;
+    gap: 30px;
+}
+.addCategoryPrice select,.addCategoryPrice input{
+    max-width: 250px;
+    padding: 14px;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid rgb(161, 160, 158);
+}
+.addCategoryPrice select:focus,.addCategoryPrice input:focus{
+    border: 2px solid rgb(180, 108, 90);
+}
+
+
+.submitButton{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    text-transform: uppercase;
+}
+.submitButton:hover{
+    background-color:rgb(36, 36, 36) ;
+border-radius: 15px;
+}
+.loadingButton{
+     display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    transition-duration: 0.5s;
+    text-transform: uppercase;
+    pointer-events: none;
+    opacity: 70%;
+}
+
+
+@media (max-width: 860px) {
+    .add h1{
+        justify-content: center;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .addCategoryPrice{
+        display: flex;
+        flex-direction: column;
+    }
+    .add form {
+        font-size: 14px;
+    }
+    .submitButton{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+    }
+    .loadingButton{
+        font-size:0px;
+        align-items: center;
+        justify-content: center;
+    }
+    .add{
+        width: 70%;
+    }
+
+    .addItemName input, .addItemDescription textarea{
+        padding: 10px;
+        font-size: 12px;
+    }
+
+
+.addCategoryPrice select,.addCategoryPrice input{
+    padding: 10px;
+    font-size: 12px;
+
+}
+}

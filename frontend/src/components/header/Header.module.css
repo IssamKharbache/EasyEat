@@ -1,0 +1,128 @@
+.header{
+    height: 34vw;
+    margin: 80px auto;
+    background: url('/assets/header/headerimg.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 10px;
+    margin-bottom: 95px;
+    
+    
+}
+
+
+.headerContents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 3s;
+}
+
+.headerContents h2{
+    font-weight: 500;
+    color: white;
+    font-size: max(4.5vw,22px);
+}
+
+.headerContents p {
+    color: white;
+    font-size: 1.2vw;
+    font-weight: 300;
+}
+ .button {
+    display: flex;
+    align-items: center ;
+    gap: 4px;
+    border: none;
+    background: white;
+     color: black;
+     font-weight: 500;
+     padding: 1vw 2.3vw;
+     border-radius: 55px;
+     font-size: max(1vw,13px);
+     cursor: pointer;
+     transition: 0.3s;
+}
+.headerContents .button:hover{
+    background-color: #b4acac;
+    rotate: 5deg;
+}
+
+/* responsive design */
+@media (max-width:1050px) {
+    .header{
+        height: 50vw;
+    }
+  
+    .headerContents{
+        max-width: 70%;
+    }
+    .headerContents h2{
+        font-weight: 500;
+        color: white;
+        font-size: max(4vw,60px);
+        margin-bottom:20px;
+    }
+    .headerContents p{
+        font-size: 15px;
+        margin-bottom: 11px;
+        margin-bottom: 35px;
+     }
+    
+}
+@media (max-width:750px) {
+   
+    .headerContents{
+        max-width: 100%;
+    }
+    .headerContents h2{
+        font-weight: 500;
+        color: white;
+        font-size: max(4vw,40px);
+        margin-bottom:10px;
+    }
+  
+   
+    .headerContents .button {
+        gap: 12px;
+       padding: 1vw 2vw;
+    }
+}
+    
+@media (max-width:533px) {
+    .header{
+        height: 70vw;
+    }
+    .headerContents{
+        max-width: 100%;
+    }
+    .header h2{
+        font-size: max(4vw,40px);
+    
+    }
+    .header p{
+        font-size: 11px;
+    
+    }
+  
+    
+}
+
+/* keyframes */
+@keyframes fadeIn {
+    0%{
+      opacity: 0;
+       margin-left: -10%;
+    }
+    100%{
+      opacity: 1;
+      margin-left: 0%;
+     
+    }
+    
+  }

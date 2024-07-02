@@ -1,0 +1,156 @@
+.cart {
+    margin-top: 100px;
+}
+
+.cartItemsTitle{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    color: grey;
+    font-size: max(1vw,12px);
+    gap: 15px;
+}
+
+
+.cartItemsItem{
+    color: rgb(58, 55, 55);
+    margin: 10px 0px;
+    font-weight: 500;
+}
+.cartItemsItem img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cart hr {
+    height: 1px ;
+    background-color: rgb(226, 226, 226);
+    border: none;
+    border-radius: 50px;
+}
+
+.deleteIcon{
+    color: rgb(202, 105, 105);
+    cursor: pointer;
+    transition-duration: 300ms;
+
+}
+.deleteIcon:hover{
+    scale: 1.2;
+    
+}
+
+/* total cart */ 
+
+.cartBottom{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: max(12vw,20px);
+    
+    
+}
+
+.cartTotal{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #B86767;
+    color: white;
+    padding: 80px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+.cartTotal h2{
+    margin-bottom: 15px;
+}
+
+.cartTotalDetails{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(214, 214, 214);
+}
+
+.cartTotal hr {
+    margin: 20px 0px;
+    height: 2px;
+    background-color: rgb(145, 89, 89);
+    border-radius: 25px;
+}
+.cartTotal button {
+    border:1px solid white;
+    background: transparent;
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+   width: 100%;
+    padding: 12px 0px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: auto;
+    transition-duration: 500ms;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+.cartTotal button:hover {
+    background-color:white ;
+    color: black;
+}
+
+/* coupon coude*/
+
+.couponCode{
+    flex: 1;
+}
+.couponCode P {
+    color: #555;
+}
+
+.cartCouponCodeInput{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eaeaea;
+    border-radius: 4px;
+}
+.cartCouponCodeInput input {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    padding: 15px;
+    font-size: 15px;
+}
+.cartCouponCodeInput button {
+    width: max(10vw,150px);
+    padding: 10px;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+
+/* responsice design */
+
+@media (max-width:1000px) {
+    .cartBottom{
+        flex-direction: column-reverse;
+    }
+    .couponCode{
+        justify-content: start;
+    }
+    .cartTotal{
+        font-size: 17px;
+        padding: 40px;
+    }
+    .cartTotal button {
+        font-size: 13px;
+    }
+    
+}

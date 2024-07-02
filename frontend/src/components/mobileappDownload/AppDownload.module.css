@@ -1,0 +1,65 @@
+
+.appDownloadPlatforms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: max(2vw,10px);
+    
+}
+
+.appDownloadPlatforms img:hover{
+  transform: scale(1.08);
+  transition: 300ms;
+}
+.playstoreImg{
+    width: 200px;
+    object-fit: contain;
+    cursor: pointer;
+
+}
+.appstoreImg{
+    width: 180px;
+    object-fit: contain;
+    cursor: pointer;
+
+}
+.platformImages{
+    display: flex;
+}
+
+appDownloadPlatforms h2{
+    text-align: center;
+    font-size: 25px;
+}
+
+@media (max-width:950px) {
+    .playstoreImg{
+        width: 150px;
+        object-fit: contain;
+        cursor: pointer;
+    
+    }
+    .appstoreImg{
+        width: 130px;
+        object-fit: contain;
+        cursor: pointer;
+    
+    }
+.platformImages{
+    display: flex;
+
+}
+    .appDownloadPlatforms{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        
+    }
+    .appDownloadPlatforms h2{
+        text-align: start;
+        font-size: 20px;
+    }
+    
+    
+}

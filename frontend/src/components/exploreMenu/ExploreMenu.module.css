@@ -1,0 +1,70 @@
+.exploreMenu{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.exploreMenu h1 {
+    color: #262626;
+    font-weight: 500;
+
+}
+.exploreMenuText{
+    max-width: 60%;
+    color:#808080;
+}
+.exploreMenuList{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    margin: 20px 0px;
+    overflow-x: scroll;
+}
+
+.exploreMenuList::-webkit-scrollbar{
+    display: none;
+
+}
+.exploreMenuListItem img{
+    width: 7.5vw;
+    min-width: 80px;
+    min-height: 80px;
+    height: 7.5vw;
+    cursor:pointer;
+    border-radius: 100%;
+    transition: 0.2s;
+    object-fit: cover;
+}
+
+.exploreMenuListItem p {
+    margin-top: 10px;
+    color: #3b3b3b;
+    font-size: max(1.4vw,16px);
+}
+.exploreMenu hr {
+    margin: 10px 0px;
+    height: 2px;
+    background-color: #B86767;
+    border: none;
+    border-radius: 40px;
+}
+
+.exploreMenuListItem .active {
+    border: 3px solid #B86767;
+    padding: 2px;
+}
+
+.exploreMenuListItem .textActive {
+    color: #B86767;
+}
+
+
+@media (max-width:1050px) {
+    .exploreMenuText{
+        max-width: 100%;
+        font-size: 14px;
+    }
+    
+}

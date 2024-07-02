@@ -1,0 +1,55 @@
+.dashboard{
+    margin-left:70px;
+    margin-top: 75px;
+}
+.dashboard h1{
+    margin-bottom: 25px;
+    font-weight: 600;
+   
+}
+
+.container{
+    display: flex;
+    gap: 45px;
+    
+}
+.container h1{
+    font-weight: 500;
+    font-size: 25px;
+}
+.container p{
+    font-weight: 600;
+    font-size: 35px
+
+}
+.statisticFirstItem{
+    background-color: rgb(196, 119, 145);
+    padding: 45px;
+    color: white;
+    border-radius: 15px;
+}
+.statisticSecondItem{
+    background-color:rgb(24, 87, 61) ;
+    padding: 45px;
+    color: white;
+    border-radius: 15px;
+}
+.statisticThirdItem{
+    background-color: rgb(30, 68, 83);
+    padding: 45px;
+    color: white;
+    border-radius: 15px;
+}
+
+@media (max-width:1000px) {
+
+    .container{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    
+}
+.dashboard{
+  margin: auto;
+}
+}

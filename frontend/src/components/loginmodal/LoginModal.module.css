@@ -1,0 +1,120 @@
+.loginModal{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #00000090;
+    display: grid;
+}
+.loginModalContainer {
+    place-self: center;
+    width: max(30vw,370px);
+    color: #808080;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 30px;
+    border-radius: 8px;
+    font-size: 14px;
+    animation: fadefromRight 1s;
+}
+
+.loginModalTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    font-size: 25px;
+    
+}
+
+.closeIcon{
+    font-size: 30px;
+    cursor: pointer;
+}
+.loginModalInputs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.loginModalInputs input {
+    outline: none;
+    border: 1px solid #c9c9c9;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    
+}
+.loginModalInputs input:focus {
+    border: 2px solid #B86767;
+}
+.loginModalContainer button{
+    border: none;
+    padding: 13px;
+    background-color:#B86767;
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+    border-radius: 5px;
+    cursor: pointer;
+     transition-duration:300ms ;
+
+}
+.loginModalContainer button:hover{
+   background-color: #b14b4b;
+ } 
+.loginModalCondition{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: -5px;
+}
+.loginModalCondition input{
+    accent-color: #B86767;
+}
+.loginModal span{
+    color: #B86767;
+    font-weight: 500;
+    cursor: pointer;
+}
+.loginModal span:hover{
+    text-decoration-line: underline;
+}
+
+.loginModal .loadingButton{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 15px;
+opacity: 60%;
+pointer-events: none;
+}
+
+.errorContainer{
+    background-color: rgb(184, 118, 118);
+    color: white;
+    padding: 12px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+@keyframes fadefromRight {
+    0%{
+      opacity: 0;
+      margin-right: -50%;
+     
+    }
+    100%{
+      opacity: 1;
+      margin-right: 0%;
+    }
+    
+  }
+
+  @media (max-width:750px) {
+    .loginModal .loadingButton {
+      font-size: 12px;
+        }
+    
+  }
