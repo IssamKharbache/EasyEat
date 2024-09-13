@@ -20,8 +20,7 @@ const App = () => {
   const interval = 300000; // Interval in milliseconds (30 seconds)
 
   function reloadWebsite() {
-    axios
-      .get(url)
+    fetch(url)
       .then((response) => {
         console.log(
           `Reloaded at ${new Date().toISOString()}: Status Code ${
