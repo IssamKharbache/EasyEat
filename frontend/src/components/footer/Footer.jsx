@@ -44,7 +44,7 @@ const Footer = () => {
       <p className={classes.footerCopyright}>
         Copyright © Easy Eat all right reserved
       </p>
-      <p>Built by <a href="https://kharbache.vercel.app/">Issam Kharbache<</a>/p>
+      <p>Built by <a href="https://kharbache.vercel.app/">Issam Kharbache</a>/p>
     </div>
   );
 };
